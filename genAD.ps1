@@ -53,15 +53,7 @@ function CreateADUser()
     # Create AD user
     try
     {
-        New-ADUser `
-            -Name $name `
-            -GivenName $firstname `
-            -Surname $lastname `
-            -SamAccountName $samAccountName `
-            -UserPrincipalName $principalName `
-            -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
-            -Enabled $true `
-            -ErrorAction Stop
+        New-ADUser -Name $name -GivenName $firstname -Surname $lastname -SamAccountName $samAccountName -UserPrincipalName $principalName -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) -Enabled $true -ErrorAction Stop
 
         Write-Host "Created user: $username"
     }
