@@ -1,0 +1,24 @@
+{
+    "domain": "Adi.com",
+    "groups": [
+        {
+            "name": "Cyber"
+        }
+    ],
+    "users": [
+        {
+            "name": "Aditya Bhatt",
+            "password": "Qwerty@123",
+            "groups": [
+                "Cyber"
+            ]
+        },
+        {
+            "name": "Person Random",
+            "password": "QwertY@456",
+            "groups": [
+                "Cyber"
+            ]
+        }
+    ]
+}
