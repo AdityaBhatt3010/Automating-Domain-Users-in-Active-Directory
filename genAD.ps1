@@ -71,10 +71,7 @@ function CreateADUser()
             Get-ADGroup -Identity $group_name -ErrorAction Stop |
                 Out-Null
 
-            Add-ADGroupMember `
-                -Identity $group_name `
-                -Members $samAccountName `
-                -ErrorAction Stop
+            Add-ADGroupMember -Identity $group_name -Members $samAccountName -ErrorAction Stop
 
             Write-Host "Added '$username' to '$group_name'"
         }
